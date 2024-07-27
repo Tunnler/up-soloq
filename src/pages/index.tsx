@@ -27,7 +27,7 @@ export default function IndexPage() {
         </div>
 
         <div className="flex flex-col items-center mt-4">
-          <p className="tracking-widest mb-2 text-gray-700 dark:text-gray-50">El desafío termina en:</p>
+          <p className="tracking-widest mb-2 text-gray-700 dark:text-gray-50 text-xs sm:text-base">El desafío termina en:</p>
           <Counter />
         </div>
 
