@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Onest", sans-serif;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -100% 50%;
+  }
+}
+
+.animate-background-shine {
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
