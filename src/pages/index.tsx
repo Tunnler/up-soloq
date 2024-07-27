@@ -1,6 +1,7 @@
 import DefaultLayout from "@/layouts/default";
 
 import Table from "@/components/Table";
+import { Counter } from "@/components/counter/counter";
 
 export default function IndexPage() {
   return (
@@ -19,14 +20,21 @@ export default function IndexPage() {
               Fomentamos la unión y diversión a través de los videojuegos
             </span>
 
-            <p className="dark:text-gray-50 text-gray-700">Comunidad gamer de la <span className="text-primary">Universidad del Pacífico </span></p>
+            <p className="dark:text-gray-50 text-gray-700 text-sm">Comunidad gamer de la <span className="text-primary">Universidad del Pacífico </span></p>
 
 
           </div>
         </div>
 
-        <Table />
+        <div className="flex flex-col items-center mt-4">
+          <p className="tracking-widest mb-2 text-gray-700 dark:text-gray-50">El desafío termina en:</p>
+          <Counter />
+        </div>
+
+        
       </section>
+
+      <Table />
     </DefaultLayout>
   );
 }
